@@ -1,0 +1,108 @@
+ <section class="ustBaslik">
+            <div class="container col-6">
+                
+                <div class="mt-5 text-center">
+
+                    
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Add Post</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Add Profil</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Add Kandıra Post</button>
+  </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+
+
+
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+
+<h2>ADD POST
+                    </h2>
+                     <form action="/post/test" method="POST">
+                    <div class="mb-3"><label class="" for="title">Başlık</label><input class="form-control item" type="text" name="title"></div>
+                   
+                    <div class="mb-3"><label class="" for="message">İçerik</label><textarea class="form-control item" name="content"></textarea></div>
+                    <div class="mb-3"><button class="btn btn-primary btn-lg d-block w-100" type="submit">Gönder</button></div>
+               
+               <fieldset>
+                <input type="radio" id="html" name="tur" value="haber"checked>
+                        <label for="html">haber</label><br>
+                        <input type="radio" id="css" name="tur" value="">
+                        <label for="css">faliyet</label><br>
+                
+                </fieldset>
+                </form>
+
+
+
+
+
+  </div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+
+
+      <h2>ADD Yönetim
+                    </h2>
+                     <form action="/post/test2" method="POST" enctype="multipart/form-data">
+                    <div class="mb-3"><label class="" for="title">Ad Soyad</label><input class="form-control item" type="text" name="title"></div>
+                    <div class="mb-3"><label class="" for="title">Doğum Tarihi</label><input class="form-control item" type="date" name="date"></div>
+                    <div class="mb-3"><label class="" for="title">Telefon no</label><input class="form-control item" type="tel" name="tel"></div>
+                    <div class="mb-3"><label class="" for="title">Email</label><input class="form-control item" type="email" name="email"></div>
+                    <div class="mb-3"><label class="" for="title">İmage</label><input class="form-control item" type="file" name="profil_image"></div>
+                    <div class="mb-3"><button class="btn btn-primary btn-lg d-block w-100" type="submit">Gönder</button></div>
+               
+               <fieldset>
+                <input type="radio" id="html" name="tur" value="baskan"checked>
+                        <label for="html">başkan</label><br>
+                        <input type="radio" id="css" name="tur" value="">
+                        <label for="css">uye</label><br>
+                
+              </fieldset>
+                    </form>
+  </div>
+
+
+
+
+
+  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+
+
+
+<h2>ADD Kandıra Post
+                    </h2>
+                     <form action="/post/test3" method="POST" enctype="multipart/form-data">
+                    
+                   <div class="mb-3"><label class="" for="title">Başlık</label><input class="form-control item" type="text" name="title"></div>
+                    <div class="mb-3"><label class="" for="message">İçerik</label><textarea class="form-control item" name="content"></textarea></div>
+                    <div class="mb-3"><label class="" for="title">İmage</label><input class="form-control item" type="file" name="kandirapost_image"></div>
+                    <div class="mb-3"><button class="btn btn-primary btn-lg d-block w-100" type="submit">Gönder</button></div>
+               
+          
+                </form>
+
+
+
+
+
+  </div>
+
+
+
+
+  </div>
+</div>
+
+                  
+
+                </div>
+               
+            </div>
+        </section>

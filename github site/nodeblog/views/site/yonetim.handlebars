@@ -1,0 +1,80 @@
+ <section class="ustBaslik text-center">
+         
+                <div class="mt-5">
+                    <h2 class="text-center">Yönetim</h2>
+                </div>
+                <p class="text-center text-muted">Yönetim Kurulu Personellerimizin iletişim bilgileri<br><br><br></p>
+  
+            <div class="container">
+               {{#each profils}}
+               {{#if tur}}
+                    <div class="row shadow p-3 mb-5 bg-white rounded">
+                        <div class="col"></div>
+                        
+                        <div class="col-md-4">
+                            <div class="">
+                                <h2>Yönetim Kurulu Başkanı</h2>
+                                 
+                                <div class="row">
+                                    <div class="col-1"><i class="icon ion-android-calendar icon"></i></div>
+                                    <div class="col-9"><span>{{dateStyle date 'MMM DD YYYY'}}</span></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-1"><i class="icon ion-person icon"></i></div>
+                                    <div class="col-9"><span>{{title}}</span></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-1"><i class="icon ion-ios-telephone icon"></i></div>
+                                    <div class="col-9"><span>{{tel}}</span></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-1"><i class="icon ion-at icon"></i></div>
+                                    <div class="col-9"><span>{{email}}</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class=""><img class="buyut mx-auto rounded-circle d-xxl-flex" src='{{profil_image}}' width="150" height="150" ></div>
+                        </div>
+                    </div>
+                    {{/if}} 
+  {{/each}} 
+            {{#each profils}}
+                    {{#if tur}}
+                    {{else}}
+                    <div class="row shadow p-3 mb-5 bg-white rounded">
+                        <div class="col"></div>
+
+                        <div class="col-md-4">
+                            <div class="">
+                                 <h2>Yönetim Kurulu Üyesi</h2>
+                                <div class="row">
+                                    <div class="col-1"><i class="icon ion-android-calendar icon"></i></div>
+                                    <div class="col-9"><span>{{dateStyle date 'MMM DD YYYY'}}</span></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-1"><i class="icon ion-person icon"></i></div>
+                                    <div class="col-9"><span>{{title}}</span></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-1"><i class="icon ion-ios-telephone icon"></i></div>
+                                    <div class="col-9"><span>{{tel}}</span></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-1"><i class="icon ion-at icon"></i></div>
+                                    <div class="col-9"><span>{{email}}</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class=""><img class="buyut mx-auto rounded-circle d-xxl-flex" src="{{profil_image}}" width="150" height="150" ></div>
+                        </div>
+                    </div>
+                            {{/if}}
+                    {{/each}} 
+
+                   
+            
+            </div>
+        </section>

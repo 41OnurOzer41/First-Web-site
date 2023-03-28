@@ -1,0 +1,45 @@
+<section class="ustBaslik">
+    <div class="container col-6">
+        <div class="mt-5 text-center">
+            <h2>DİLEK GÖRÜŞ</h2>
+        </div>
+        <form>
+            <div class="mb-3"><label class="" for="name">Adınız</label><input class="form-control item" type="text"
+                    id="name"></div>
+            <div class="mb-3"><label class="" for="subject">Konu</label><input class="form-control item" type="text"
+                    id="subject"></div>
+            <div class="mb-3"><label class="" for="email">Email</label><input class="form-control item" type="email"
+                    id="email"></div>
+            <div class="mb-3"><label class="" for="message">Mesaj</label><textarea class="form-control item"
+                    id="message"></textarea></div>
+            <div class="mb-3"><button class="btn btn-primary btn-lg d-block w-100" onClick="mailgonder()"
+                    type="submit">Gönder</button></div>
+            {{!--
+
+            <a href="
+ --}}                </form>
+            </div>
+        </section>
+
+
+        <script>
+            function mailgonder(){
+
+                var iletisimMail = 'onur.ozer@ogr.dpu.edu.tr';
+                var ad = document.getElementById("name");
+                var konu = document.getElementById("subject");
+                var mail = document.getElementById("email"); 
+                var msg = document.getElementById("message"); 
+                
+                if(ad.value==='' || konu.value==='' || mail.value==="" || msg.value==='' )
+                {
+                    alert("Bütün alanları doldurun!");
+                }else{ 
+                    var body = 'Kullanici: ' + ad.value + " / Mail: " + mail.value + " / Mesaj: " + msg.value;
+                    alert(body)
+                    location.href='mailto:'+iletisimMail+'?body='+body+'&subject='+konu.value;
+                }
+
+      
+            }
+        </script>

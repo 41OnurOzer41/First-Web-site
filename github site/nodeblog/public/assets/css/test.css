@@ -1,0 +1,130 @@
+section{
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+.bursKarti{
+    box-shadow: 0px 2px 10px rgb(0 0 0 / 8%);
+    padding: 35px;
+    border-top: 4px solid #0ea0ff;
+    margin-bottom: 30px;
+}
+
+.navbar{
+    padding-bottom: 0px;
+    padding-top: 0px;
+
+}
+.carousel-item{
+    max-height:500px;
+}
+.ustBosluk{
+    margin-top: 125px;
+}
+.ustBoslukAz{
+    margin-top: 80px;
+}
+.navbar img{
+
+    padding-left: 15px;
+    width: 75px;padding-left: 0px;
+    margin-right: 15px;
+}
+
+.ResimLogo{
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    border-radius: 100px;
+    margin-bottom: 30px;
+}
+.etkinlikler-baslik{
+    margin-bottom: 50px;
+}
+.etkinlikler-item{
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #eee;
+}
+
+.badge-buyuk {
+    font-size:20px;
+}
+
+.badge-kucuk {
+    font-size:16px;
+}
+
+
+.haber-basligi a{
+
+    color: rgb(0,0,0);
+}
+
+.resim-sabit{
+    overflow: hidden;
+    margin-bottom: 0;
+    background: #000;
+    opacity: 1;
+}
+
+.resim-sabit img{
+    height:400px;
+}
+.buyut:hover{
+
+   /* font-size: 50px;*/
+   transition: 1.2s;
+   transform: scale(1.1);
+}
+
+.ResimLogo:hover{
+    transition: 1.2s;
+transform:scale(1.5);
+}
+
+.video{
+    margin-top:50px; position:relative;padding-bottom:56.25%;height:0;overflow:hidden;
+}
+
+.video iframe{
+    width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;
+}
+
+.renkdegistir:hover{
+    transition: 1.2s;
+    color: red;
+    background-color:aqua;
+    font-weight: 900;
+    
+}
+
+p{
+font-family: 'Times New Roman', Times, serif !important;
+
+}
+.renkdegistir:hover .baslıkbuyut{
+    transition: 1.2s;
+    color: black;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+
+
+footer{
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    padding-bottom: 15px;
+
+}    
+
+footer a{
+    color: #ffff;
+    padding-right: 10px;
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+}  
